@@ -1,1 +1,276 @@
+
 # Styling YouTube UI clone app
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: white;
+}
+
+
+header{
+    height:60px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+    position:fixed;
+    top:0;
+    width:100%;
+    border-bottom:1px solid black;
+    z-index:1000;
+}
+
+.left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.menu{
+    font-size:22px;
+    cursor:pointer;
+}
+
+.logo{
+    color:red;
+}
+
+.logo i{
+    margin-right:5px;
+}
+
+.middle{
+    display:flex;
+    width:45%;
+}
+
+.middle input{
+    flex:1;
+    padding:10px;
+    border:1px solid black;
+    border-radius:20px 0 0 20px;
+    outline:none;
+}
+
+.middle button{
+    width:60px;
+    border:none;
+    background: white;
+    border-radius:0 20px 20px 0;
+    cursor:pointer;
+}
+
+.middle button:hover{
+    background:white;
+}
+
+.right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.right i{
+    font-size:20px;
+    cursor:pointer;
+}
+
+.profile{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+}
+
+/* MAIN LAYOUT */
+
+.container{
+    display:flex;
+    margin-top:60px;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width:220px;
+    background:white;
+    height:calc(100vh - 60px);
+    position:fixed;
+    padding-top:20px;
+    overflow:auto;
+}
+
+.sidebar a{
+    display:block;
+    padding:15px 20px;
+    color:#222;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.sidebar a:hover{
+    background: grey;
+}
+
+.sidebar i{
+    width:30px;
+}
+
+
+
+main{
+    margin-left:220px;
+    width:100%;
+    padding:20px;
+}
+
+
+
+.categories{
+    display:flex;
+    gap:10px;
+    overflow-x:auto;
+    margin-bottom:20px;
+}
+
+.categories button{
+    border:none;
+    padding:8px 18px;
+    border-radius:20px;
+    cursor:pointer;
+    background: red;
+    white-space:nowrap;
+}
+
+.categories button:hover{
+    background: grey;
+}
+
+.categories .active{
+    background:black;
+    color:white;
+}
+
+
+.videos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.thumbnail{
+    width:100%;
+    display:block;
+}
+
+.info{
+    display:flex;
+    gap:12px;
+    padding:12px;
+}
+
+.channel{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+}
+
+.info h4{
+    margin-bottom:6px;
+    font-size:16px;
+}
+
+.info p{
+    color:#555;
+    margin-bottom:4px;
+}
+
+.info span{
+    color:gray;
+    font-size:14px;
+}
+
+
+.sidebar.hide{
+    width:70px;
+}
+
+.sidebar.hide a{
+    text-align:center;
+    font-size:0;
+}
+
+.sidebar.hide i{
+    font-size:20px;
+}
+
+.sidebar.hide + main{
+    margin-left:70px;
+}
+
+
+
+@media(max-width:900px){
+
+.middle{
+    width:55%;
+}
+
+.sidebar{
+    width:70px;
+}
+
+.sidebar a{
+    text-align:center;
+    font-size:0;
+}
+
+.sidebar i{
+    font-size:20px;
+}
+
+main{
+    margin-left:70px;
+}
+
+}
+
+@media(max-width:700px){
+
+.middle{
+    display:none;
+}
+
+.right{
+    gap:12px;
+}
+
+main{
+    padding:15px;
+}
+
+.videos{
+    grid-template-columns:1fr;
+}
+
+}

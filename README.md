@@ -5,6 +5,14 @@
 
 A beginner-friendly YouTube homepage clone built using **HTML**, **CSS**, and **JavaScript**. This project recreates the basic layout of YouTube, including the header, sidebar, category section, and responsive video grid.
 
+
+## Document Link Task 3 :
+
+https://docs.google.com/document/d/1icXZOPBH3pCMXko1cBb014BBuYWdZKCdzMA_znBMzGc/edit?usp=drivesdk
+
+
+
+
 ## 🚀 Live Demo
 
 https://namratarwt96.github.io/task3-clone-ui-challenge-yt-internspark_internship/

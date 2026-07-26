@@ -74,7 +74,5 @@ Through this project, I learned:
 - Designing a modern webpage inspired by a real-world application
 - Organizing frontend project files
 
-##
-Made with ❤️ using HTML, CSS & JavaScript.
 
 

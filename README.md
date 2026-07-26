@@ -7,9 +7,7 @@ A beginner-friendly YouTube homepage clone built using **HTML**, **CSS**, and **
 
 ## 🚀 Live Demo
 
-Add your deployed project link here:
-
-
+https://namratarwt96.github.io/task3-clone-ui-challenge-yt-internspark_internship/
 
 
  ## 💻 Source Code
